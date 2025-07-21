@@ -25,6 +25,7 @@ for input in "$VIDEO_DIR"/*.mov; do
   else
     echo "⚠️  Failed to convert $filename.mov — not deleting."
   fi
+  echo "-----------------------------------"
 done
 
 echo "✅ All conversions complete!"
