@@ -3,44 +3,6 @@
 <head>
   <title>Chess Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f0f0f0;
-      padding: 2rem;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .video-container {
-      display: none; /* hidden by default */
-      max-width: 800px;
-      margin: 1rem auto;
-      background: #fff;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    video {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-    .video-link {
-      display: block;
-      margin: 1rem auto;
-      max-width: 800px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      color: #0077cc;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    .video-link:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
 
@@ -57,24 +19,6 @@
     <div class="title">Lesson 1: How Pawns Move</div>
   </div>
   <!-- Video 2 -->
-  <a class="video-link" onclick="toggleVideo('rookVideo')">Lesson 2: How Rooks Move</a>
-  <div id="rookVideo" class="video-container">
-    <video controls>
-      <source src="videos/Rooks_Moves_and_Castling.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="title">Lesson 2: How Rooks Move</div>
-  </div>
-  <!-- Video 3 -->
-  <a class="video-link" onclick="toggleVideo('bishopVideo')">Lesson 3: How Bishops Move</a>
-  <div id="bishopVideo" class="video-container">
-    <video controls>
-      <source src="videos/How_Bishop_Move(REDO).mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="title">Lesson 3: How Bishops Move</div>
-  </div>
-  <!-- Video 3 -->
   <a class="video-link" onclick="toggleVideo('knightVideo')">Lesson 4: How Knights Move</a>
   <div id="knightVideo" class="video-container">
     <video controls>
@@ -82,6 +26,26 @@
       Your browser does not support the video tag.
     </video>
     <div class="title">Lesson 4: How Knights Move</div>
+  </div>
+  <!-- Video 3 -->
+  <a class="video-link" onclick="toggleVideo('bishopVideo')">Lesson 3: How Bishops Move</a>
+  <div id="bishopVideo" class="video-container">
+    <video controls>
+      <source src="videos/How_Bishop_Move.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="title">Lesson 3: How Bishops Move</div>
+  </div>
+
+
+  <!-- Video 4 -->
+  <a class="video-link" onclick="toggleVideo('rookVideo')">Lesson 2: How Rooks Move</a>
+  <div id="rookVideo" class="video-container">
+    <video controls>
+      <source src="videos/Rooks_Moves_and_Castling.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="title">Lesson 2: How Rooks Move</div>
   </div>
   <!-- Video 5 -->
   <a class="video-link" onclick="toggleVideo('queenVideo')">Lesson 5: How Queens Move</a>
@@ -102,32 +66,89 @@
     <div class="title">Lesson 6: How Kings Move</div>
   </div>
   <!-- Video 7 -->
-  <a class="video-link" onclick="toggleVideo('checkmateVideo')">Lesson 7: Checkmate</a>
+  <a class="video-link" onclick="toggleVideo('checkVideo')">Lesson 7: Check</a>
+  <div id="checkVideo" class="video-container">
+    <video controls>
+      <source src="videos/Check.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="title">Lesson 7: Check</div>
+  </div>
+  <!-- Video 8 -->
+  <a class="video-link" onclick="toggleVideo('checkmateVideo')">Lesson 8: Checkmate</a>
   <div id="checkmateVideo" class="video-container">
     <video controls>
       <source src="videos/Checkmate.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="title">Lesson 7: Checkmate</div>
+    <div class="title">Lesson 8: Checkmate</div>
   </div>
-  <!-- Video 8 -->
-  <a class="video-link" onclick="toggleVideo('checkmateWithRookVideo')">Lesson 8: Checkmate with Rook</a>
+  <!-- Video 9 -->
+  <a class="video-link" onclick="toggleVideo('enpassantVideo')">Lesson 9: En Passant</a>
+  <div id="enpassantVideo" class="video-container">
+    <video controls>
+      <source src="videos/En_passant.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="title">Lesson 9: En Passant</div>
+  </div>
+  <!-- Video 10 -->
+  <a class="video-link" onclick="toggleVideo('materialVideo')">Lesson 10: Materialk</a>
+  <div id="materialVideo" class="video-container">
+    <video controls>
+      <source src="videos/Material_and_Example.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="title">Lesson 10: Material</div>
+  </div>
+  <!-- Video 11 -->
+  <a class="video-link" onclick="toggleVideo('checkmateWithRookVideo')">Lesson 11: Checkmate with Rook</a>
   <div id="checkmateWithRookVideo" class="video-container">
     <video controls>
       <source src="videos/Checkmate_with_Rook.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="title">Lesson 8: Checkmate With Rook</div>
+    <div class="title">Lesson 11: Checkmate With Rook</div>
+  </div>
+  <!-- Video 12 -->
+  <a class="video-link" onclick="toggleVideo('checkmateWithQueenVideo')">Lesson 12: Checkmate with Queen</a>
+  <div id="checkmateWithQueenVideo" class="video-container">
+    <video controls>
+      <source src="videos/Checkmate_with_Queen.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="title">Lesson 12: Checkmate With Queen</div>
+  </div>
+  <!-- Video 13 -->
+  <a class="video-link" onclick="toggleVideo('filesRanksSquaresVideo')">Lesson 13: Files and Ranks</a>
+  <div id="filesRanksSquaresVideo" class="video-container">
+    <video controls>
+      <source src="videos/files_and_ranks.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="title">Lesson 13: Files and Ranks</div>
+  </div>
+  <!-- Video 14 -->
+  <a class="video-link" onclick="toggleVideo('ladderCheckmateVideo')">Lesson 14: Ladder Checkmates</a>
+  <div id="ladderCheckmateVideo" class="video-container">
+    <video controls>
+      <source src="videos/Ladder_checkmate.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="title">Lesson 14: Ladder Checkmate</div>
   </div>
 
+  <script src="toggleVideo.js"></script>
+
+  <!-- Demo Chess Puzzle Attempt - if it fails, we just kinda ignore it and commit again without it.-->
+  <h1>Chess Puzzle</h1>
+  <div class="chessboard" id="board"></div>
+  <div id="status"></div>
+  
+  <script src="puzzle.js"></script>
 
 
-  <script>
-    function toggleVideo(id) {
-      const videoDiv = document.getElementById(id);
-      videoDiv.style.display = videoDiv.style.display === "none" ? "block" : "none";
-    }
-  </script>
+  
 
 </body>
 </html>
