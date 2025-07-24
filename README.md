@@ -18,5 +18,4 @@ Ideas:
 - Analysis Board
 - Worksheets
 - Tournoment Directory
->>>>>>> fa672f1 (added new videos, puzzle implementation as well)
 
